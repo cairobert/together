@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/fragment_settings_profile_relative_layout"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/fragment_settings_profile_image_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            tools:background="@drawable/man"/>
+        <TextView
+            android:id="@+id/fragment_settings_name_text_view"
+            android:paddingLeft="20dp"
+            android:layout_toRightOf="@id/fragment_settings_profile_image_view"
+            android:layout_centerVertical="true"
+            android:textSize="20dp"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="robert"/>
+        <include
+            layout="@layout/right_caret_image_view"/>
+    </RelativeLayout>
+
+    <include layout="@layout/view_separator_line_view"/>
+
+    <RelativeLayout
+        android:id="@+id/fragment_settings_settings_relative_layout"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/fragment_settings_settings_image_view"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/settings"/>
+        <TextView
+            android:layout_toRightOf="@id/fragment_settings_settings_image_view"
+            android:layout_centerVertical="true"
+            android:textSize="15dp"
+            android:paddingLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置"/>
+        <include
+            layout="@layout/right_caret_image_view"/>
+    </RelativeLayout>
+
+    <include layout="@layout/view_separator_line_view"/>
+</LinearLayout>

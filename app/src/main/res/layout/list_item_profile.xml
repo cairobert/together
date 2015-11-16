@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+             android:background="@android:color/background_light"
+             >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/profile_data_item_min_height">
+
+        <TextView
+            android:id="@+id/item_profile_data_name"
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:text="职业"
+            tools:text="职业"/>
+
+        <TextView
+            android:id="@+id/item_profile_data_value"
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:text="软件研发"
+            tools:text="软件研发"/>
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/profile_item_view_bottom_line"/>
+</FrameLayout>

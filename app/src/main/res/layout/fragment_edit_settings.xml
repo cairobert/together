@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/fragment_edit_settings_profile_image_layout"
+        layout="@layout/template_settings_list_item_value_imageview"/>
+
+    <include
+        android:id="@+id/fragment_edit_settings_name_layout"
+        layout="@layout/template_settings_list_item_value_textview"/>
+
+    <include
+        android:id="@+id/fragment_edit_settings_signature_layout"
+        layout="@layout/template_settings_list_item_value_textview"/>
+
+
+    <TextView
+        android:text="相册"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_edit_settings_images_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+
+    <include layout="@layout/view_separator_line_view"
+             android:layout_width="match_parent"
+             android:layout_height="1dp"/>
+
+    <include
+        android:id="@+id/fragment_edit_settings_birthday_layout"
+        layout="@layout/template_settings_list_item_value_textview"/>
+
+    <include
+        android:id="@+id/fragment_edit_settings_height_layout"
+        layout="@layout/template_settings_list_item_value_textview"/>
+
+    <include
+        android:id="@+id/fragment_edit_settings_weight_layout"
+        layout="@layout/template_settings_list_item_value_textview"/>
+
+    <include
+        android:id="@+id/fragment_edit_settings_hometown_layout"
+        layout="@layout/template_settings_list_item_value_textview"/>
+
+    <include
+        android:id="@+id/fragment_edit_settings_profession_layout"
+        layout="@layout/template_settings_list_item_value_textview"/>
+
+    <include
+        android:id="@+id/fragment_edit_settings_company_layout"
+        layout="@layout/template_settings_list_item_value_textview"/>
+
+</LinearLayout>

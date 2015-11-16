@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="90dp">
+
+    <ImageView
+        android:id="@+id/profile_image_view"
+        android:padding="10dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/name_text_view"
+        android:padding="5dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="5dp"
+        android:layout_marginLeft="@dimen/list_person_simple_left_margin_to_image_view"
+        android:layout_toRightOf="@id/profile_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        tools:text="张三"/>
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_toRightOf="@+id/profile_image_view"
+        android:padding="5dp"
+        android:layout_below="@+id/name_text_view"
+        android:layout_marginLeft="@dimen/list_person_simple_left_margin_to_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/list_person_simple_age_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="22"/>
+
+        <ImageView
+            android:id="@+id/gender_image_view"
+            android:layout_gravity="center_vertical"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/man"
+            android:layout_toRightOf="@+id/name_text_view"/>
+
+        <TextView
+            android:id="@+id/distance_text_view"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="相距3公里"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/list_person_simple_signature_text_view"
+        android:padding="5dp"
+        android:layout_toRightOf="@+id/profile_image_view"
+        android:layout_marginLeft="@dimen/list_person_simple_left_margin_to_image_view"
+        android:layout_below="@id/linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        tools:text="hello"/>
+
+
+
+</RelativeLayout>

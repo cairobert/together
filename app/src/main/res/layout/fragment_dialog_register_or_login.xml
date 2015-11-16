@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/fragment_dialog_login_title_text_view"
+        android:gravity="center"
+        android:padding="10dp"
+        android:typeface="monospace"
+        android:textColor="@android:color/holo_blue_bright"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:text="nihao"/>
+
+    <View
+        android:background="@android:color/holo_blue_bright"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="3dp"/>
+
+
+
+    <EditText
+        android:id="@+id/fragment_dialog_login_name_text_edit"
+        android:padding="8dp"
+        android:hint="用户名"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"/>
+
+    <EditText
+        android:id="@+id/fragment_dialog_login_password_text_edit"
+        android:hint="密码"
+        android:padding="8dp"
+        android:inputType="textPassword"
+        android:fontFamily="sans-serif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RadioGroup
+        android:id="@+id/fragment_dialog_gender_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="8dp"
+        style="?android:listSeparatorTextViewStyle">
+
+        <RadioButton
+            android:id="@+id/fragment_dialog_man_radio_button"
+            android:text="男"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <RadioButton
+            android:id="@+id/fragment_dialog_woman_radio_button"
+            android:text="女"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/fragment_dialog_birthday_text_view"
+        android:padding="8dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请输入生日"/>
+
+</LinearLayout>
