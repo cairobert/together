@@ -129,7 +129,7 @@ public class NearbyPeopleFragment extends Fragment
             }
         } else {
             Location location = locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
-            if (locationManager == null) {
+            if (location == null) {
                 Toaster.getInstance(getContext()).showToast("没有网哦", Toast.LENGTH_SHORT);
                 getActivity().finish();
             }
